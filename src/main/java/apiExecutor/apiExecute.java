@@ -10,23 +10,35 @@ import io.restassured.specification.RequestSpecification;
 
 public class apiExecute {
 	//GET METHOD EXECUTION
-	public Response getAPI(String baseuri,String params ,String header){
+	public Response getAPI(String baseuri){
+		try {
 		/* Rest Assured Init*/		
 		RestAssured.baseURI = baseuri;
 		RequestSpecification httpRequest = RestAssured.given();
 
 		/* Converting headers to map*/	
-		JSONObject headers = new JSONObject(header);
-		HashMap<String, Object> map = (HashMap<String, Object>) headers.toMap();
-		Iterator itr =  map.entrySet().iterator();
-		while(itr.hasNext()) {
-			Map.Entry<String, String> entry = (Entry<String, String>) itr.next();
-			httpRequest.header(entry.getKey(),entry.getValue());
-		}
-
+//		if(head == true) {
+//		JSONObject headers = new JSONObject(header);
+//		HashMap<String, Object> map = (HashMap<String, Object>) headers.toMap();
+//		Iterator itr =  map.entrySet().iterator();
+//		while(itr.hasNext()) {
+//			Map.Entry<String, String> entry = (Entry<String, String>) itr.next();
+//			httpRequest.header(entry.getKey(),entry.getValue());
+//		}
+//		}
 		//Hitting API with params
-		Response response = httpRequest.get(params);
+		Response response = httpRequest.get();
 		return response;
+		}
+		
+		catch(IllegalArgumentException IAE) {
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+		
 	}
 	
 	
