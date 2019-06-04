@@ -1,4 +1,4 @@
-package apiExecutor;
+package api_executor;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -8,7 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class apiExecute {
+public class ApiExecute {
 	//GET METHOD EXECUTION
 	public Response getAPI(String baseuri){
 		try {
@@ -16,29 +16,17 @@ public class apiExecute {
 		RestAssured.baseURI = baseuri;
 		RequestSpecification httpRequest = RestAssured.given();
 
-		/* Converting headers to map*/	
-//		if(head == true) {
-//		JSONObject headers = new JSONObject(header);
-//		HashMap<String, Object> map = (HashMap<String, Object>) headers.toMap();
-//		Iterator itr =  map.entrySet().iterator();
-//		while(itr.hasNext()) {
-//			Map.Entry<String, String> entry = (Entry<String, String>) itr.next();
-//			httpRequest.header(entry.getKey(),entry.getValue());
-//		}
-//		}
-		//Hitting API with params
 		Response response = httpRequest.get();
 		return response;
 		}
 		
-		catch(IllegalArgumentException IAE) {
+		catch(IllegalArgumentException iae) {
 			
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		return null;
-		
+		return null;		
 	}
 	
 	

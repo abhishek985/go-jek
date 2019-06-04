@@ -1,4 +1,4 @@
-package extentReport;
+package extentreport;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -6,10 +6,10 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-public class testListener extends extentManager implements ITestListener {
+public class Testlistener extends ExtentManager implements ITestListener {
 
 	//Extent Report Declarations
-	public static ExtentReports extent = extentManager.createInstance();
+	public static ExtentReports extent = ExtentManager.createInstance();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 
 	//@Override

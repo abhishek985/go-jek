@@ -6,10 +6,10 @@ import java.io.IOException;
 
 import org.xml.sax.SAXException;
 
-import apiExecutor.apiExecute;
+import api_executor.ApiExecute;
 import io.restassured.response.Response;
 public class Utility {
-	apiExecute ae=new apiExecute();
+	ApiExecute ae=new ApiExecute();
 	JSONComp c =new JSONComp();
 	XMLComp xc =new XMLComp();	
 	BufferedReader reader1;

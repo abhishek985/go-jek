@@ -6,13 +6,14 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import utils.JSONComp;
 import utils.XMLComp;
 
-public class testCompare {
+public class Testcompare {
 
 	static Properties prop;
 	JSONComp jc = new JSONComp();
@@ -20,7 +21,7 @@ public class testCompare {
 
 
 	@Test
-	public void JSONtest() throws FileNotFoundException, IOException {
+	public void jsonTest() throws FileNotFoundException, IOException {
 		prop = new Properties();
 		prop.load(new FileInputStream("src/test/resources/test.properties"));
 
@@ -34,7 +35,7 @@ public class testCompare {
 	}
 
 	@Test
-	public void XMLtest() throws SAXException, IOException {
+	public void xmlTest() throws SAXException, IOException {
 		
 		String xml1 = prop.getProperty("xml1");
 		String xml2 = prop.getProperty("xml2");
@@ -44,6 +45,10 @@ public class testCompare {
 		Assert.assertEquals(xc.compare(xml1, xml3), false);
 		Assert.assertEquals(xc.compare(xml1, xml1), true);
 
-
+	}
+	
+	@AfterMethod
+	public void close() {
+		
 	}
 }

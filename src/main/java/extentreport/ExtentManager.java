@@ -1,4 +1,4 @@
-package extentReport;
+package extentreport;
 
 import java.io.File;
 import org.openqa.selenium.Platform;
@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class extentManager {
+public class ExtentManager {
 	static ExtentReports extent;
 	ExtentTest logger;
 	static Platform platform;
