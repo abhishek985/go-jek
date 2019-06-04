@@ -1,9 +1,7 @@
 /Users/b0206672/Desktop/go-jek/src/main/java/utils/XMLComp.java
 /Users/b0206672/Desktop/go-jek/src/main/java/utils/JSONComp.java
-/Users/b0206672/Desktop/go-jek/src/main/java/extentReport/extentManager.java
 /Users/b0206672/Desktop/go-jek/src/main/java/utils/Utility.java
-/Users/b0206672/Desktop/go-jek/src/main/java/extentReport/testListener.java
-/Users/b0206672/Desktop/go-jek/src/main/java/utils/ReadFile1.java
-/Users/b0206672/Desktop/go-jek/src/main/java/apiExecutor/apiExecute.java
-/Users/b0206672/Desktop/go-jek/src/main/java/utils/MyException.java
+/Users/b0206672/Desktop/go-jek/src/main/java/api_executor/ApiExecute.java
+/Users/b0206672/Desktop/go-jek/src/main/java/extentreport/ExtentManager.java
 /Users/b0206672/Desktop/go-jek/src/main/java/utils/MainClass.java
+/Users/b0206672/Desktop/go-jek/src/main/java/extentreport/Testlistener.java

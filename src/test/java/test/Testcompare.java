@@ -7,12 +7,15 @@ import java.util.Properties;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
+import extentreport.Testlistener;
 import utils.JSONComp;
 import utils.XMLComp;
 
+@Listeners(extentreport.Testlistener.class)	
 public class Testcompare {
 
 	static Properties prop;
@@ -49,6 +52,6 @@ public class Testcompare {
 	
 	@AfterMethod
 	public void close() {
-		
+		Testlistener.extent.flush();
 	}
 }

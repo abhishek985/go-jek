@@ -12,25 +12,23 @@ public class ApiExecute {
 	//GET METHOD EXECUTION
 	public Response getAPI(String baseuri){
 		try {
-		/* Rest Assured Init*/		
-		RestAssured.baseURI = baseuri;
-		RequestSpecification httpRequest = RestAssured.given();
+			/* Rest Assured Init*/		
+			RestAssured.baseURI = baseuri;
+			RequestSpecification httpRequest = RestAssured.given();
+			Response response = httpRequest.get();
+			return response;
+		}		
+		catch(IllegalArgumentException iae){
 
-		Response response = httpRequest.get();
-		return response;
-		}
-		
-		catch(IllegalArgumentException iae) {
-			
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
 		return null;		
 	}
-	
-	
-	
+
+
+
 	//POST METHOD EXECUTION
 	public Response postAPI(String baseuri,String params ,String header){
 		/* Rest Assured Init*/		
@@ -50,7 +48,7 @@ public class ApiExecute {
 		Response response = httpRequest.post(params);
 		return response;
 	}
-	
+
 	//PUT METHOD EXECUTION
 	public Response putAPI(String baseuri,String params ,String header){
 		/* Rest Assured Init*/		
@@ -70,7 +68,7 @@ public class ApiExecute {
 		Response response = httpRequest.put(params);
 		return response;
 	}
-	
+
 	//DELETE METHOD EXECUTION
 	public Response deleteAPI(String baseuri,String params ,String header){
 		/* Rest Assured Init*/		
