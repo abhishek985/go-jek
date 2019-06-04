@@ -30,6 +30,7 @@ public class testCompare {
 
 		Assert.assertEquals(jc.compare(res1, res2),-1);
 		Assert.assertEquals(jc.compare(res1, res3),0);
+
 	}
 
 	@Test
@@ -41,6 +42,8 @@ public class testCompare {
 		
 		Assert.assertEquals(xc.compare(xml1, xml2), true);
 		Assert.assertEquals(xc.compare(xml1, xml3), false);
+		Assert.assertEquals(xc.compare(xml1, xml1), true);
+
 
 	}
 }

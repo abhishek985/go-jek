@@ -1,12 +1,11 @@
-package test;
+package utils;
+
 import java.io.File;
 import java.io.IOException;
 
 import org.xml.sax.SAXException;
 
-import utils.Utility;
-public class test {
-
+public class MainClass {
 	public static void main(String args[]) throws IOException, SAXException {
 		try {
 			Utility rf = new Utility();

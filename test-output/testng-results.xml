@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58" started-at="2019-06-04T09:22:29Z" finished-at="2019-06-04T09:22:29Z">
+  <suite name="Default suite" duration-ms="86" started-at="2019-06-04T10:59:11Z" finished-at="2019-06-04T10:59:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58" started-at="2019-06-04T09:22:29Z" finished-at="2019-06-04T09:22:29Z">
+    <test name="Default test" duration-ms="86" started-at="2019-06-04T10:59:11Z" finished-at="2019-06-04T10:59:11Z">
       <class name="test.testCompare">
-        <test-method status="PASS" signature="JSONtest()[pri:0, instance:test.testCompare@91161c7]" name="JSONtest" duration-ms="15" started-at="2019-06-04T09:22:29Z" finished-at="2019-06-04T09:22:29Z">
+        <test-method status="PASS" signature="JSONtest()[pri:0, instance:test.testCompare@91161c7]" name="JSONtest" duration-ms="8" started-at="2019-06-04T10:59:11Z" finished-at="2019-06-04T10:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JSONtest -->
-        <test-method status="PASS" signature="XMLtest()[pri:0, instance:test.testCompare@91161c7]" name="XMLtest" duration-ms="23" started-at="2019-06-04T09:22:29Z" finished-at="2019-06-04T09:22:29Z">
+        <test-method status="PASS" signature="XMLtest()[pri:0, instance:test.testCompare@91161c7]" name="XMLtest" duration-ms="53" started-at="2019-06-04T10:59:11Z" finished-at="2019-06-04T10:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- XMLtest -->
